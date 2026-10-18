@@ -23,7 +23,7 @@ def main():
 
     client = genai.Client()  # reads GEMINI_API_KEY from the environment
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         contents=f"Review this diff:\n\n{diff}",
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
